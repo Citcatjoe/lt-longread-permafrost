@@ -1,0 +1,466 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+
+		{{ block('head_brand') }}
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/loader.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script>var players = [];</script>
+
+	</head>
+	<body style="padding-top: {{ navBarOffset }};">
+		{{ block('bar_brand') }}
+
+		<!-- <div class="fixed-map-wrapper">
+			
+		</div> -->
+		
+		<!-- <div class="overlay">
+			<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+			<img class="logo-sponsor" src="img/logo-sponsor.svg" alt="">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>  -->
+
+		<header>
+			<div class="header__bg"></div>
+			<div class="header__gradient"></div>
+			
+			<div class="video-wrapper">
+				<video loop muted>
+				  <source src="https://player.vimeo.com/external/233446218.hd.mp4?s=083aa5605e358c82a99f6b6ba425a847d16efcb9&profile_id=174" type="video/mp4"> 
+				  Votre navigateur ne supporte pas les vidéos HTML%.
+				</video>
+			</div>
+
+			<!-- <div class="smil-wrapper">
+				<div class="layer layer-bg"><img src="img/scene-intro-bg.svg" alt=""></div>
+				<div class="layer layer-clouds"><img src="quoi bon/scene-intro-clouds.svg" alt=""></div>
+				
+				<div class="layer layer-smoke1"><img src="img/scene-intro-smoke1.svg" alt=""></div>
+				<div class="layer layer-smoke2"><img src="img/scene-intro-smoke2.svg" alt=""></div>
+				<div class="layer layer-msc"><img src="img/scene-intro-msc.svg" alt=""></div>
+				<div class="layer layer-speedboat"><img src="img/scene-intro-speedboat.svg" alt=""></div>
+				<div class="layer layer-fishboat"><img src="img/scene-intro-fishboat.svg" alt=""></div>
+			</div> -->
+
+			<div class="header__content">
+				<div class="header__content__container">
+					<div class="header__content__container__box">
+						<h2 class="author" style="margin-bottom: 20px !important;"><span style="background: #5799cc; text-transform: uppercase; font-weight: 900; padding: 3px 10px;">Éboulement à Bondo</span></h2>
+						<h1>Alpes: Quand la montagne s'effondre<br><!-- <span></span> --></h1>
+						<!-- <img class="separateur" src="img/separateur.svg" alt=""> -->
+						<!-- <h2 class="author">Un reportage de<span> Valérie de Graffenried</span> le long<br>de la frontière entre les Etats-Unis et le Mexique</h2>	 -->
+						<h2 class="social" >
+							<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fa fa-facebook"></i></a>
+							<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><i class="fa fa-twitter fa-middle"></i></a>
+							<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><i class="fa fa-linkedin"></i></a>
+						</h2>
+					</div>
+				</div>
+			</div> 
+
+			
+
+			<div class="scroll-indicator">
+				<div class="scroll-indicator-inner"></div> 
+			</div>
+
+			<!-- <div class="header-sponsor">
+				<a href="https://www.letemps.ch/partenariats" target="_blank"><span class="charte">[?]</span></a>
+				<a href="https://www.mirabaud.com/fr/" target="_blank"><img src="img/logo-sponsor-only.svg" alt=""></a> 
+				<span>Avec le soutien de </span>
+
+			</div> -->
+		</header>
+
+		<section class="text">
+			<div class="container">
+
+				<h3>
+					Grosse Teile des Dorfes Bondo GR liegen unter Schutt und Stein. Acht Menschenleben hat der verheerende Felssturz mit den anschliessenden Murgängen gefordert. Es wird nicht der letzte sein. Der Klimawandel setzt unseren Alpen zu, der Permafrost taut. Doch wie funktioniert dieser Alpenkleber eigentlich?
+				</h3>
+				<div class="spacer-small"></div>
+				<hr>
+				<div class="spacer-small"></div>
+				<div class="spacer-small"></div>
+
+
+				<h4>
+					Mathias Bader (Blick)<br>
+					<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>Janine Gygax (Blick)<br>
+					<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Simon Huwiler (Blick)<br>
+					<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Adrian Meyer (Blick)<br>
+					<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Adaptation pour Le Temps par Célia Héron et César Greppin
+				</h4>
+
+				<p>
+					Die Alpen zerbröseln. Der Permafrost – das früher dauerhafte Eis im Hochgebirge, der Leim, der Grate und Bergspitzen zusammenhält – erwärmt sich immer schneller. Grund: Unsere Sommer werden immer extremer, die Winter immer kürzer. Auch jetzt steuern wir wieder auf einen neuen Rekord-Sommer zu. Die Bodentemperaturen sind so hoch wie nie.
+				</p>
+
+				<p>
+					Im Hochgebirge taut deshalb der Boden. Weil vermehrt Regen fällt statt Schnee, sickert Wasser in Felsklüfte, der Druck im Berginnern steigt, der Fels wird instabil – und kann abbrechen. Kleinere Felsabbrüche sind nicht selten. Und manchmal rappelt es heftig. Bondo GR ist das letzte Beispiel. Zuerst stürzten Felsmassen in die Tiefe, dann floss ein Gemisch aus Stein und Wasser ins Tal, zerstörte, was der Felssturz noch nicht zerstört hatte.
+				</p>
+
+			</div>
+		</section>
+
+		<!-- SECTION VIDEO -->
+		<!-- <section class="video" style="margin-bottom: 2%;">
+			<div class="video-wrapper">
+				<div class="trigger"></div>
+				<video controls poster="img/article/poster-video1.png">
+				  <source src="https://player.vimeo.com/external/233446218.hd.mp4?s=083aa5605e358c82a99f6b6ba425a847d16efcb9&profile_id=174" type="video/mp4">
+				  Votre navigateur ne supporte pas les vidéos HTML%.
+				</video>
+			</div>
+		</section> -->
+
+		<!-- 2 IMAGES CÔTE à CÔTE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery double">
+			<div class="layout">
+				<div class="layout-inner">
+					<div class="video-wrapper">
+						<div class="trigger"></div>
+						<video id="myPlayerID"
+          data-account="4772533039001"
+          data-player="BycJ8zEXg"
+          data-embed="default"
+          data-video-id="5550024121001"
+          class="video-js" controls></video>
+					</div>
+				</div>
+				<div class="layout-inner">
+					<img class="zoom lazy" data-original="img/article/coulee1.jpg">
+					<div class="caption">
+						<b>UN EMPLOYÉ</b> de l’usine de production Epson-Seiko.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="">
+			<div class="container">
+				<p>
+					«Überall oberhalb von 2500 Metern erwärmte sich der Permafrost in den vergangenen Jahren kontinuierlich», sagt Marcia Phillips (48), Gruppenleiterin für Permafrost und Schneeklimatologie am Institut für Schnee- und Lawinenforschung (SLF) in Davos GR. «Die Folgen sieht man heute bereits mit dem Auge. Die Alpen verändern sich.»
+				</p>
+			</div>
+		</section>
+
+		<section class="odd">
+			<div class="container">
+				<h3 class="inter-titre"><b style="font-weight: 900;">Alpen-Kleber</b></h3>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus fugit vel deserunt, cupiditate laudantium, harum eveniet quibusdam. Vel tenetur, et error debitis consequuntur sapiente ea beatae officia. Culpa, iste?
+				</p>
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd" style="">
+			<div class="layout">
+				<img class="guinneapig erosion-blue" src="img/article/erosion-blue.svg">
+				<img class="guinneapig erosion-rock1" src="img/article/erosion-rock1.svg">
+				<img class="guinneapig erosion-rock2" src="img/article/erosion-rock2.svg">
+				<img class="guinneapig erosion-rock3" src="img/article/erosion-rock3.svg">
+				<img class="guinneapig erosion-rock4" src="img/article/erosion-rock4.svg">
+				<img class="guinneapig erosion-rock5" src="img/article/erosion-rock5.svg">
+				<img class="" src="img/article/erosion-text.svg">
+				<!-- <div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div> -->
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<p>
+					Während das Schwinden der Gletscher offensichtlich ist, nimmt man dieses Bröckeln eher lokal wahr: abbrechende Felswände, instabile Grate, rutschende Hänge, rissige Gebäude. Vor allem für Bergsteiger wird die Lage in den Alpen besorgniserregender, sagt Forscherin Phillips. Sichere Routen zu finden, werde zunehmend schwieriger. Daneben kämpfen Bergbahnen mit instabileren Bauten. Die ohnehin kostspielige Infrastruktur muss für teures Geld zusätzlich gesichert werden.
+				</p>
+			</div>
+		</section>
+
+
+
+
+
+		<section class="odd">
+			<div class="container">
+				<h3 class="inter-titre"><b style="font-weight: 900;">Hochs und Thiefs von Gebirgsböden</b></h3>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus fugit vel deserunt, cupiditate laudantium, harum eveniet quibusdam. Vel tenetur, et error debitis consequuntur sapiente ea beatae officia. Culpa, iste?
+				</p>
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd">
+			<div class="layout">
+				<svg version="1.1" id="Calque_1" class="guinneapig tassement-courbe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 921.7 422" style="enable-background:new 0 0 921.7 422;" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+					.st1{fill:none;stroke:#5799CC;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+				</style>
+				<g id="courbe">
+					<g>
+						<path class="st0" d="M2.6,96.5c17.6-26.8,37-50.5,71-50.1l0,0c77.8,0.9,76.3,126.1,154.1,127s79.2-78,157-77.1s76.3,61,154.1,61.9
+							c77.8,0.9,79.2-37.8,157-36.9s76.4,47.5,154.1,48.4l0,0"/>
+						<path class="st1" d="M2.6,96.5c17.6-26.8,37-50.5,71-50.1l0,0c77.8,0.9,76.3,126.1,154.1,127s79.2-78,157-77.1s76.3,61,154.1,61.9
+							c77.8,0.9,79.2-37.8,157-36.9s76.4,47.5,154.1,48.4l0,0"/>
+					</g>
+				</g>
+				</svg>
+				<img class="" src="img/article/tassement-rocks.svg">
+				<!-- <div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div> -->
+			</div>
+		</section>
+
+		<section class="odd">
+			<div class="container">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero molestias eum voluptatibus laudantium officia, excepturi tempora dolores eaque. Corrupti possimus eum necessitatibus optio qui quam omnis nihil harum quod.
+				</p>
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd padding-bottom">
+			<div class="layout">
+				<img class="guinneapig crack2" src="img/article/crack2.svg">
+				<img class="" src="img/article/crack1.svg">
+				<!-- <div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div> -->
+			</div>
+		</section>
+
+		<!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery hero">
+			<div class="layout">
+				<img class="zoom lazy" data-original="img/article/coulee-hero.jpg">
+				<!-- <div class="caption">
+					Seiko Astron GPS 
+				</div> -->
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<p>
+					Die Entwicklung der Permafrost-Temperaturen in den Schweizer Alpen beobachten SLF und das Schweizer Permafrost-Monitoring-Netzwerk Permos anhand von jeweils 30 Bohrlöchern. Die Messungen begannen in den 80er-Jahren. Lange war der Einfluss des Klimawandels auf den alpinen Permafrost unklar, mittlerweile sind die Folgen erkennbar: Er erwärmt sich stetig.
+				</p>
+
+				<p>
+					Dennoch, und das mag auf den ersten Blick paradox erscheinen, bildet sich in den Alpen derzeit sogar neuer Permafrost – ausgerechnet durch die Klimaerwärmung. Während der Permafrost an exponierten Graten und Felswänden in höheren Lagen wärmer wird, formiert sich an den Hangfüssen und in den Tälern neuer eisiger Boden.
+				</p>
+
+				<p>
+					Grund dafür ist eine ideale Mischung aus vermehrten Lawinen im Winter und zunehmenden Felsstürzen im Sommer. Landet der Steinschlag auf einer Lawinenablagerung, bildet sich ein Sandwich aus Schutt und Eis. Der Schutt konserviert auf natürliche Weise das Eis im Boden. Mit der Zeit entsteht ein sogenannter Blockgletscher, der Tausende Jahre bestehen kann.
+				</p>
+			</div>
+		</section>
+
+		<section class="odd">
+			<div class="container">
+				<h3 class="inter-titre"><b style="font-weight: 900;">Bildung von Blockgletschern</b></h3>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus fugit vel deserunt, cupiditate laudantium, harum eveniet quibusdam. Vel tenetur, et error debitis consequuntur sapiente ea beatae officia. Culpa, iste?
+				</p>
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd padding-bottom">
+			<div class="layout">
+				<img class="zoom lazy" data-original="img/article/degel.svg">
+				<!-- <div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div> -->
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd padding-bottom">
+			<div class="layout">
+				<img class="zoom lazy" data-original="img/article/gravats.jpg">
+				<div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<p>
+					«Blockgletscher sind eine mögliche Wasserquelle der Zukunft», sagt Forscherin Marcia Phillips. Das ist die gute Nachricht. Die schlechte: Die eisigen Schutthaufen rutschen wegen der Klimaerwärmung immer schneller zu Tal. In 20 Jahren hat sich ihre Kriechgeschwindigkeit zum Teil vervierfacht – von rund zehn Zentimetern pro Jahr auf bis zu 40. Damit liefern sie zuverlässig Material für Murgänge, welche auch die Infrastruktur bedrohen können. «Weil die Böden instabiler werden, wird Bauen im Hochgebirge zur Herausforderung», sagt Phillips. «Man muss immer damit rechnen, dass sich der Boden in Bewegung setzt.»
+				</p>
+			</div>
+		</section>
+
+		<!-- SECTION VIDEO -->
+		<section class="video">
+			<div class="video-wrapper" style="max-width: 700px;">
+				<div class="trigger"></div>
+				<video controls poster="img/article/poster-carre.jpg">
+				  <source src="https://player.vimeo.com/external/233472087.hd.mp4?s=60a34a7503049f4f34f07f22fb9f51b18965c3c4&profile_id=174" type="video/mp4">
+				  Votre navigateur ne supporte pas les vidéos HTML%.
+				</video>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<p>
+					Wie unterschiedlich sich die Temperaturen im Permafrost entwickeln, zeigt ein Vergleich von Bohrlochdaten des SLF. Auf dem Jungfraujoch etwa, auf knapp 3500 Metern über Meer, stiegen sie seit 2010 von minus 5,8 auf minus fünf Grad Celsius. Kritisch für den Permafrost wird es ab minus einem Grad. Angesichts des Klimawandels ist es nur noch eine Frage der Zeit, bis diese Grenze erreicht wird.
+				</p>
+			</div>
+		</section>
+
+		<section class="odd">
+			<div class="container">
+				<h3 class="inter-titre"><b style="font-weight: 900;">Lokale Unterschiede</b></h3>
+
+				<p>
+					<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam temporibus fugit vel deserunt, cupiditate laudantium, harum eveniet quibusdam. Vel tenetur, et error debitis consequuntur sapiente ea beatae officia. Culpa, iste?</b>
+				</p>
+			</div>
+		</section>
+
+		<!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+		<section class="gallery small odd padding-bottom">
+			<div class="layout">
+				<img class="zoom lazy" data-original="img/article/engadin.svg">
+				<!-- <div class="caption">
+					<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+				</div> -->
+			</div>
+		</section>
+
+		<section class="padding-bottom">
+			<div class="container">
+				<p>
+					Überraschend sanken sie in den vergangenen zwei Wintern auf dem Schafberg oberhalb von Pontresina GR (2750 m ü. M.) sogar – weil der erste Schnee sehr spät fiel. «Ein spätes Einschneien im Winter kann zur Abkühlung des Bodeneises führen», sagt Forscherin Phillips. Denn früher Schnee würde die Bodenwärme vom Sommer isolieren - fehlt diese Schneedecke, kühlt der Boden bei sinkenden Temperaturen im Winter tiefer ab. «Ein wärmeres Klima kann also interessanterweise eine kühlende Wirkung haben.» Allerdings nur lokal.
+				</p>
+				<p>
+					Die Alpen haben Fieber.
+				</p>
+			</div>
+		</section>
+
+		<footer>
+			<!-- <hr class="end"> -->
+			<div class="container">
+
+				<h5>Nos grands formats</h5>
+
+				<div class="row">
+					<a href="https://labs.letemps.ch/interactive/2017/bol-dor-mirabaud-epopee-technologique/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb-boldor.jpg');"></div>
+							<div class="caption">Le Bol d'Or, une épopée technologique</div>
+						</div>
+					</a>
+
+					<a href="https://labs.letemps.ch/interactive/2016/longread-parc-adula/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb_adula.jpg');"></div>
+							<div class="caption">Parc Adula: Bataille dans la montagne</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="row">
+				<a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb_fioul.jpg');"></div>
+							<div class="caption">Fioul lourd, le sang impur de la globalisation</div>
+						</div>
+					</a>
+
+					<a href="https://labs.hebdo.ch/interactive/2016/longread-horlogerie-japonaise/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb-horlogerie-japonaise.jpg');"></div>
+							<div class="caption">Horlogerie japonaise – A la conquête du monde</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="row">
+					<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb_gothard.jpg');"></div>
+							<div class="caption">Les oubliés du Gothard</div>
+						</div>
+					</a>
+					<a href="https://labs.letemps.ch/interactive/2016/tchernobyl-30-ans/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb-tchernobyl.jpg');"></div>
+							<div class="caption">30 ans après, voyage au cœur de la zone </div>
+						</div>
+					</a>
+				</div>
+
+				<div class="row">
+					<a href="https://labs.letemps.ch/interactive/2016/shenzhen/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb_shenzhen.jpg');"></div>
+							<div class="caption">Shenzhen, de la fumée des usines aux ateliers d'artistes</div>
+						</div>
+					</a>
+					<a href="https://labs.letemps.ch/interactive/2016/montre-suisse/" target="blank" class="footer__link">
+						<div class="teaser">
+							<div class="teaser-bg" style="background: url('img/thumb-montre.jpg');"></div>
+							<div class="caption">Comment j'ai fabriqué ma montre en 8 heures</div>
+						</div>
+					</a>
+					
+				</div>
+
+			</div>
+
+			<div class="credits">
+				<a href="https://www.blick.ch/" target="_blank" style="color: white;">Blick.ch</a> / <a href="https://www.letemps.ch/" target="_blank" style="color: white;">LeTemps.ch</a>
+			</div>
+		</footer>
+		
+		{{ block('footer_brand') }}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>-->
+        <script src="js/jquery.lazyload.js?v=1.9.7"></script>
+        <script src="js/intro-control.js"></script>
+        <script src="js/viewport.js"></script>
+        <!--<script src="js/timeline-control.js"></script>-->
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/video-control.js"></script>
+        <script src="js/map-anim.js"></script>
+        <!--<script src="js/hero-control.js"></script>-->
+        <script src="js/zoom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+        <!-- Brightcove Video -->
+            <script src="https://players.brightcove.net/4772533039001/BycJ8zEXg_default/index.min.js"></script>
+	</body>
+</html>
