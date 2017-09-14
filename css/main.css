@@ -505,8 +505,8 @@ textarea {
   transition: opacity 0.3s; }
 
 .is-drawn {
-  stroke-dasharray: 230;
-  stroke-dashoffset: 230;
+  stroke-dasharray: 980;
+  stroke-dashoffset: 980;
   animation: dash 1.5s linear forwards;
   opacity: 1 !important;
   transition: opacity 0s; }
@@ -870,6 +870,27 @@ section {
       section.gallery.small .layout .guinneapig {
         position: absolute;
         top: 0; }
+        section.gallery.small .layout .guinneapig.erosion-blue {
+          opacity: 0; }
+        section.gallery.small .layout .guinneapig.erosion-rock1 {
+          opacity: 0.2; }
+        section.gallery.small .layout .guinneapig.erosion-rock2 {
+          opacity: 0.2; }
+        section.gallery.small .layout .guinneapig.erosion-rock3 {
+          opacity: 0.2; }
+        section.gallery.small .layout .guinneapig.erosion-rock4 {
+          opacity: 0.2; }
+        section.gallery.small .layout .guinneapig.erosion-rock5 {
+          opacity: 0.2; }
+      section.gallery.small .layout path {
+        opacity: 0;
+        transition: opacity 0.5s; }
+      section.gallery.small .layout .crack2 {
+        opacity: 0;
+        transition: opacity 0.5s; }
+        section.gallery.small .layout .crack2.is-visible {
+          opacity: 1;
+          transition: opacity 0.5s; }
     @media (max-width: 992px) {
       section.gallery.double {
         margin-bottom: 0; } }
@@ -2055,3 +2076,5 @@ Main Components
   h2,
   h3 {
     page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */
